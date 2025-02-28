@@ -1,26 +1,59 @@
-WasteAway
+# WasteAway
 
-Dette prosjektet har som mål å lage en applikasjon som hjelper folk med å redusere matsvinn, ettersom det er et av de større miljøproblemene i verden. WasteAway hjelper brukeren med å holde oversikt over matvarene i kjøleskapet og deres utløpsdatoer. Applikasjonen tilbyr også funksjoner for å lage handlelister, finne oppskrifter basert på innholdet i kjøleskapet og dele kjøleskapet med andre personer som kan gi forslag til handlelisten.
+WasteAway is an application designed to help users reduce food waste, which is one of the major environmental issues worldwide. The application assists users in keeping track of the food items in their refrigerator along with their expiration dates. Additionally, WasteAway provides features for creating shopping lists, finding recipes based on available ingredients, and sharing a fridge with others who can contribute to the shopping list.
 
-WasteAway bruker REST API-endepunkter for å lagre informasjon i databaser. Dette sikrer at brukerdata er trygt lagret og tilgjengelig når det trengs.
+## Features
+- **Food Inventory Tracking:** Keep an organized list of food items with expiration dates.
+- **Shopping List Management:** Create and manage shopping lists with ease.
+- **Recipe Suggestions:** Get recipe recommendations based on the ingredients available in your fridge.
+- **Shared Fridge:** Collaborate with others by sharing your fridge and contributing to shopping lists.
+- **REST API Integration:** Securely store and retrieve user data through REST API endpoints.
 
-WasteAway er utviklet med Spring Boot og Vue 3, og bruker Maven og NPM som byggeverktøy. For å kjøre WasteAway, følg disse trinnene:
+## Technology Stack
+WasteAway is built using the following technologies:
+- **Backend:** Spring Boot
+- **Frontend:** Vue 3
+- **Build Tools:** Maven (for backend), NPM (for frontend)
 
-1. Klon prosjektet til din lokale maskin.
-2. Åpne en terminal i backend-mappen og kjør `mvn spring-boot:run`.
-3. Åpne en annen terminal i frontend-mappen og kjør `npm run serve`.
+## Installation & Setup
+Follow these steps to run WasteAway locally:
 
-Applikasjonen vil nå være tilgjengelig på `localhost:5173`. For å registrere en ny bruker, gå til `localhost:5173/register` og fyll ut skjemaet. Etter registrering, logg inn på `localhost:5173/login` for å begynne å bruke WasteAway.
+1. Clone the repository to your local machine:
+   ```sh
+   git clone https://github.com/your-repo/WasteAway.git
+   cd WasteAway
+   ```
 
-WasteAway har ingen spesifikke systemkrav og bør fungere på de fleste datamaskiner og nettlesere. Prosjektstørrelsen er omtrent 2 GB, så nedlasting og bygging kan ta litt tid.
+2. Start the backend:
+   ```sh
+   cd backend
+   mvn spring-boot:run
+   ```
 
-Prosjektet er lisensiert under MIT-lisensen, som gir deg frihet til å bruke og tilpasse koden som du ønsker. En .gitignore-fil er inkludert for å ignorere node_modules-mappen og redusere unødvendig overføring av data.
+3. Start the frontend:
+   ```sh
+   cd frontend
+   npm install
+   npm run serve
+   ```
 
-Hvis du ønsker å bidra til WasteAway, er det flere måter å gjøre dette på:
+The application will now be available at `http://localhost:5173`.
 
-- Opprett en pull request med endringene dine.
-- Send en e-post til 'martnal@stud.ntnu.no' og beskriv hvordan du ønsker å bidra.
+## User Registration & Login
+To start using WasteAway:
+1. Go to `http://localhost:5173/register` and fill out the registration form.
+2. After registering, log in at `http://localhost:5173/login`.
 
-Vi setter stor pris på tilbakemeldinger og forslag. Hvis du har noe du vil dele med oss, vennligst send en e-post til 'martnal@stud.ntnu.no'.
+## System Requirements
+WasteAway has no specific system requirements and should work on most computers and modern web browsers. The project size is approximately **2 GB**, so downloading and building it may take some time.
 
-Merk: Vi jobber med å lage ytterligere dokumentasjon for prosjektet. For øyeblikket er det ingen kjente feil eller begrensninger, men vi anbefaler å holde øye med prosjektets utvikling for eventuelle oppdateringer.
+## License
+This project is licensed under the **MIT License**, giving you the freedom to use and modify the code as needed.
+
+## Additional Notes
+A `.gitignore` file is included to exclude unnecessary files such as the `node_modules` directory, reducing unnecessary data transfers.
+
+For any contributions or issues, feel free to open a pull request or submit an issue in the repository.
+
+---
+**Enjoy using WasteAway and help reduce food waste!**
